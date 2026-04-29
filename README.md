@@ -116,7 +116,7 @@ This system ensures reliable order processing in a distributed environment by:
 |-------|-------|------|---------|
 | **1** | `orders` | 1 | Initial processing |
 | **2** | `orders-retry-1` | 1 | First retry (transient failures) |
-| **3** | `orders-retry-2` | 1 | Second retry (grace period) |
+| **3** | `orders-retry-2` | 2 | Second retry (grace period) |
 | **Final** | `orders-dlq` | - | Dead Letter Queue (permanent failures) |
 
 ---
